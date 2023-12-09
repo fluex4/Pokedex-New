@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        
+        <link rel="shortcut icon" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="nav"><h1 class="title">Pokedex </h1><div id="iconn"></div></div>
+        <div class="search">    
+            <div class="search-bar  " id ="bar">
+                <input type="text" class="input " id="inpt" placeholder="Pokemon name">
+                <select name="type" id="select" onchange="displayList()">
+                    
+                </select> 
+                <button  onclick="get()" id="btn2">search</button>
+            </div>
+        </div>   
+        <h2 class="hide " id="error"></h2>    
+    <div class="card hide">
+        <div class="profile" onclick="changeImg()"><img src="#" alt="" id="pfp"><h4 id="imgtype"></h4><h2 id="name">Gengar</h2></div>
+        <div id="stats"> 
+            <div id="detail">
+                <h3 class="heading">Stats:</h3>Type:
+                <span id="type">
+                     
+                </span>
+                <br>height: <span id="height"> 30</span><br>weight: <span id="weight">30</span> <br>
+                order: <span id="order">30</span> 
+            </div>
+            <hr id="divide">
+            <div id="ability">
+                <h3 class="heading">Abilities: </h3>
+                <ul id="list2"></ul>
+            </div>
+            <hr id="divide">
+            <div id="moves">
+                <h3 class="heading">Moves:</h3>
+                <ul id="list1"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="mainlist " id="mainlist">
+        
+        
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>

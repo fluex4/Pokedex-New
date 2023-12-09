@@ -1,0 +1,375 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box  ;
+  font-family: poppins;
+  font-weight: 700;
+  color: white;
+  text-transform: capitalize;
+}
+body{
+  height: 100vh;  
+  width: 98vw;
+  background-color: rgb(0, 0, 0);    
+  background-image: url("mybg.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  padding-bottom: 20px;
+}
+.nav{
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  backdrop-filter: brightness(10%);
+  min-height: 40px;
+  max-height: 90px;
+
+}
+h1,h2{
+  font-family: "Press Start 2P";
+  font-size: 2rem;
+  color: rgb(247, 212, 146);
+  text-shadow: 4px 4px 1px skyblue;
+  animation: color 1s ease infinite alternate  ;
+}
+@keyframes color {
+  from {text-shadow: 5px 5px 3px rgb(253, 64, 64);}
+  to {text-shadow: 5px 5px 3  px rgb(57, 193, 247);}
+  
+}
+h4{
+  margin-top: 2%;
+}
+#iconn{
+  background-image: url("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png");
+  height: 100%;
+  width: 20%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.search{
+
+  height: 30%;
+ width:100vw ;
+  display: flex;
+  justify-content: center;
+  align-items: center   ;
+
+  min-height: 45px;
+  max-height: 55px;
+ /* background-color: rgba(229, 232, 237, 0.458);  */
+  padding: 10px ;
+  border-radius: 7px;
+  backdrop-filter: blur(10px) brightness(60%);
+
+  
+}
+@keyframes color1 {
+  from {box-shadow: 1px 1px 1px rgba(253, 64, 64, 0.7);}
+  to {box-shadow: 1px 1px 1px rgba(57, 193, 247, 0.748);}
+  
+}
+.search-bar{
+  width: 40%;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  min-width: 300px;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid red;
+  border-bottom: 3px solid skyblue;
+}
+.input{
+  display: inline-block;
+  width: 100%;
+  height: 80%;
+  min-width: 120px;
+  width: auto;
+  border: none;
+  background-color: rgb(244, 73, 73);
+  color: black;
+  text-align: center;
+  
+}
+select{
+  height: 80%;
+  min-width: 75px;
+  border: none;
+  color: black        ; 
+  background-color: rgb(244, 73, 73);
+}
+button{
+  height: 80%; 
+  border: none;
+  background-color: rgb(88, 217, 250);
+  min-width: 85px;
+  cursor: pointer;
+  background-image: url("pikachu-running.gif");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: left;
+  padding-left  : 4px;
+  color: black        ;
+}
+option{
+  color: black;
+  background-color: rgba(255, 0, 0, 0);
+  backdrop-filter: blur(10px);
+}
+.border{
+  border: 1px solid skyblue;
+  box-shadow: 1px 1px 2px rgb(253, 64, 64);
+}
+.req{
+  animation:err 500ms linear infinite both;  
+}
+@keyframes err {
+  0%{
+      translate: 0px;
+      border: 2px solid red;
+  }
+  10%{
+      translate: 10px;
+      border: 2px solid red;
+  }
+  20%{
+      translate: 0px;
+      border: 2px solid red;
+  }
+  30%{
+      translate: -10px;
+      border: 2px solid red;
+  }
+  40%{
+      translate: 0px;
+      border: 2px solid red;
+  }
+  50%{
+      translate: 10px;
+      border: 2px solid red;
+  }
+  60%{
+      translate: 0px;
+      border: 2px solid red;
+  }
+  70%{
+      translate: -10px;
+      border: 2px solid red;
+  }
+  80%{
+      translate: 0px;
+      border: 2px solid red;
+  }
+  90%{
+      translate: 10px;
+      border: 2px solid red;
+  }
+  100%{
+      translate: 0px;
+      border: 2px solid red;
+    }
+  }
+  .card{
+    display: flex;
+    height: 81%;
+    width: 100%;
+    max-height: fit-content;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 3%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.profile h2{
+  font-family:"Press Start 2P" ;
+  font-size: 2rem;
+  color: rgb(247, 212, 146);
+
+}
+.profile{
+  backdrop-filter: blur(10px) brightness(60%);
+  width: 25%;
+  padding: 3%;
+  min-height: 200px;
+  max-height: 550px;
+  min-width: 300px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: color1 1s ease infinite alternate  ;
+  
+}
+.profile img{
+  width: 50%;
+  max-width: 200px;
+  min-width: 75px;
+   
+}
+@keyframes color {
+  from {text-shadow: 1px 1px 1px rgb(253, 64, 64);}
+  to {text-shadow: 1px 1px 1px rgb(57, 193, 247);}
+  
+}
+@keyframes bcolor {
+  from {filter: drop-shadow( 4px 4px 1px rgb(253, 64, 64));}
+  to { filter: drop-shadow( 4px 4px 1px rgb(57, 193, 247));}
+  
+}
+#stats{
+  backdrop-filter: blur(10px) brightness(60%);
+  width: 300px;
+  
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  animation: color1 1s ease infinite alternate  ;
+  
+}
+#divide{
+  margin: auto;
+  width: 90%;
+  border-bottom: 1px solid white;
+}
+#detail{
+  margin: 3% 0;
+  margin-left: 12%;
+  text-align: left;
+  font-size: 0.7rem;
+}
+#ability,#moves{
+  font-size: 1.2rem;
+  margin: 3% 4% 3% 12%;
+  margin-left: 12%;
+  text-align: left;
+}
+.heading{
+  font-size: 1.8rem;
+  animation: color 1s infinite alternate;
+}
+ul{
+  display: inline;
+}
+li{
+  display: inline;
+  font-size: 0.7rem;
+}
+#type{
+  font-weight: 700;
+}
+
+#list1 span,#list2 span{
+  font-size: 2rem;
+  
+}
+#inpt{
+  width: 100%;
+  text-transform: none;
+}
+.mainlist{
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  backdrop-filter: blur(10px) brightness(60%);
+  border-radius: 15px;
+  padding: 15px;
+  gap:10px;
+  border: 1px solid white;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  border: 1px solid white;
+  border-radius: 9px;
+}
+.list  img{
+  max-height: 100px;
+  max-width: 100px;
+}
+.list p{
+  font-size: .9rem;
+  padding: 0 9px;
+}
+
+.grass{
+  color:lightgreen;
+}
+.water{
+  color: skyblue;
+}
+.electric{
+  color: lightyellow;
+}
+.fire{
+  color:lightsalmon;
+}
+.ghost{
+  color:violet;
+}
+.normal{
+  color:#A8A878;
+}
+.flying{
+  color: #A890F0;
+}
+.ice{
+  color: #98D8D8 ; 
+}
+.fighiting{
+  color: #C03028;
+}
+.poison{
+  color:#A040A0 ;
+}
+.ground{
+  color:#E0C068 ;
+}
+.psychic{
+  color: #F85888;
+}
+.bug{
+  color:#A8B820;
+}
+.rock{
+  color:#B8A038;
+}
+.dragon{
+  color: #7038F8;
+}
+.dark{
+  color:#705848 ;
+}
+.steel{
+  color: #B8B8D0;
+}
+.fairy{
+  color:#F0B6BC;
+}
+.hide{
+  display: none;
+}
+
